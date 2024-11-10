@@ -4,4 +4,24 @@
   <artifactId>Git-Demo-Project</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>GitDemo</name>
+  
+  //cobertura
+   <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>cobertura-maven-plugin</artifactId>
+                <version>2.5.1</version>
+                <configuration>
+                    <formats>
+                        <format>xml</format>
+                    </formats>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>cobertura</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
 </project>
